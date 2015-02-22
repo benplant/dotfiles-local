@@ -1,16 +1,20 @@
 [alias]
 
 # log
-l = log --graph --date=short
-changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
-short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
-simple = log --pretty=format:\" * %s\"
-shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+  l = log --graph --date=short
+  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+  simple = log --pretty=format:\" * %s\"
+  shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 
 # remote
-r = remote -v  # show remotes (verbose)
+  r = remote -v  # show remotes (verbose)
 
 # status
-s = status
-st = status
-stat = status
+  s = status
+  st = status
+  stat = status
+
+[user]
+  name = Ben Plantinga
+  email = ben.plantinga@gmail.com
