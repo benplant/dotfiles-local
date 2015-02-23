@@ -6,3 +6,7 @@ colorscheme solarized
 highlight clear SignColumn
 
 let g:airline_powerline_fonts = 1
+
+" Exit insert mode without using Esc
+" Ctrl-[ seems more consistent (no unintended extra letters)
+inoremap jk <Esc>
