@@ -18,3 +18,5 @@
 [user]
   name = Ben Plantinga
   email = ben.plantinga@gmail.com
+[credential]
+  helper = osxkeychain
