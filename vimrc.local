@@ -1,5 +1,7 @@
 " General Configuration
 
+set title
+
 syntax enable
 set background=dark
 colorscheme solarized
