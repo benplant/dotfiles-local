@@ -2,3 +2,19 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 setopt auto_cd
 CDPATH=.:~:~/code
+
+export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash zsh)"
+
+# set tab title to cwd
+precmd () {
+  if command git rev-parse --git-dir > /dev/null 2>&1; then
+    window_label=$(git rev-parse --show-toplevel)
+    tab_label=$(echo $window_label | awk -F\/ '{print "[git] " $NF}')
+  else
+    window_label=${PWD/${HOME}/\~}
+    tab_label=$window_label
+  fi
+  echo -ne "\e]2;${window_label}\a" # set window title to full string
+  echo -ne "\e]1;${tab_label: -24}\a" # set tab title to rightmost 24 characters
+ }
