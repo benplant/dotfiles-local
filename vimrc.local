@@ -14,6 +14,15 @@ set number
 
 " Exit insert mode without using Esc
 " Ctrl-[ - consider adding a separate shortcut
+imap jk <esc>
+imap kj <esc>
+
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+
+" Emacs-like beginning and end of line.
+imap <C-e> <c-o>$
+imap <C-a> <c-o>^
 
 " <Space> is set as <Leader> in main dotfiles
 " let mapleader = "\<Space>"
