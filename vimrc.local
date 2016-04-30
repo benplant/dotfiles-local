@@ -34,6 +34,9 @@ nnoremap <Leader>o :CtrlP<CR>
 " Type <Space>w to save file (a lot faster than :w<Enter>):
 nnoremap <Leader>w :w<CR>
 
+" From The Art of Vim -- Ben Orenstein -- r00k
+map <Leader>i mmgg=G`m
+
 " From https://github.com/christoomey/dotfiles/vim/rcplugins/youcompleteme-ultisnips-superta
 " Completion functionality, unifying supertab, ultisnips, and YouCompleteMe
 " via http://stackoverflow.com/a/22253548/1626737
