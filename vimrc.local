@@ -6,6 +6,9 @@ set hlsearch      " keep search terms highlighted
 " quickly clear highlighted search items
 map <leader>h :nohlsearch<CR>
 
+set ignorecase    " Case insensitive pattern matching
+set smartcase     " Overrides ignore case if patter contains upcase
+
 syntax enable
 set background=dark
 colorscheme solarized
